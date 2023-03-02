@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>J&J Marrige</title>
+
+    <!--google Icon-->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!--maxcdn icon-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">   
+   
+    <!--stylesheet-->
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/calendar.css">
+    <link rel="stylesheet" href="css/slideshow.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/countdown.css">
+   
+</head>
+<body>
+    <div class="menu">
+        <label for="expand-menu"><div>메뉴</div></label><input type="checkbox" id="expand-menu" name="expand-menu">
+        <ul>
+            <li><a href="#home" class="item"><div>Home</div></a></li>
+            <li><a href="#the-story" class="item"><div>Stroy</div></a></li>
+            <li><a href="#date" class="item"><div>Date</div></a></li>
+            <li><a href="#Venue" class="item"><div>Venue</div></a></li>
+            <li><a href="#contact" class="item"><div>Contact</div></a></li>
+            <li><a href="#donation" class="item"><div>Donation</div></a></li>
+        </ul>
+    </div>
+    <header>
+        <section id="home">
+            <div class="intro_bg">
+                <div class="intro_bg_wrap">
+                    <div class="title_wrap">
+                        <div class="heart">
+                            <div class="heart_a"></div>
+                            <div class="heart_b"></div>
+                        </div>
+                        <h1 class="title">JE YOUN & JI EUN</h1>
+                        <div class="subtitle">We are Getting Married - January 15. 2023</div>
+                        <div class="music">
+                            <p>Click Here To Listen</p>
+                            <img src="imgs/play.png" alt="music" id="icon">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+
+
+    <section id="the-story">
+        <div class="story-container">
+            <div class="row_A">
+                <h2 class="story-title">The <span class="pink-text">Story</span> </h2>
+                <p class="story-content">
+                   <br> 우리의 첫 인연은 아름다운 부천에서 시작됩니다. 
+                   <br> 우리는 작은 식당에서 만났고 그날 밤부터 연락을 시작했습니다. 
+                   <br> 매일 밤낮으로 항상 우리는 함께 행복한 대화를 나누었습니다. 
+                   <br> 어느 날 우리는 그 식당에서 다시 만나기로 했습니다.
+                   <br> 우리의 첫 데이트는, 잊지 못할 데이트였고, 시간이 멈추길 기도했습니다. 
+                   <br> 모든 것, 매우 긴장된 데이트였지만, 우리의 얼굴에는 미소가 가득한 날이었습니다.</p>
+            </div>
+
+            <div class="row_B">
+                <img src="imgs/resturant.jpg" alt="식당">
+            </div>
+
+            <div class="row_C">
+                <p class="story-content">
+                  <br>  해변으로 여행을 갔을 ​​때부터 우리의 새로운 이야기가 시작됩니다. 
+                  <br> 따뜻한 모래, 푸른 바다, 멋진 하늘이 있는 멋진 해변. 우리는 함께 시간을 
+                  <br>  보내고 일출과 일몰을 기다렸습니다. 그리고 로맨틱한 웨딩 프러포즈가 이 순간을
+                  <br> 채웠습니다. 행복한 미소, 포옹, 키스, 아름다운 하늘, 오렌지색 일출, 
+                  <br>  파도 소리 찰나의 모든 것 가장 아름답고 행복했습니다, 
+                </p>
+                <h4 class="story_End">January 15. 2023 <span class="pink-text">결혼합니다.</span> </h4>
+            </div>
+        </div>
+    </section>
+
+    <section id =date>
+        <div class="date-wrap">
+            <div class="intro_bg1"></div>
+            <h2 class="date-title">January <span class="pink-text">15. 2023</span></h2>
+        </div>
+        <section id="countdown_section">
+            <div class="countdown_wrap">
+                    <ul id="countdown">
+                        <li>
+                        <div id="days">00</div>
+                        <div class="label">Days</div>
+                        </li>
+                        <li>
+                        <div id="hours">00</div>
+                        <div class="label">Hours</div>
+                        </li>
+                        <li>
+                        <div id="minutes">00</div>
+                        <div class="label">Minutes</div>
+                        </li>
+                        <li>
+                        <div id="seconds">00</div>
+                        <div class="label">Seconds</div>
+                        </li>
+                    </ul>
+            </div>
+        </section>
+
+
+        <section id="calendar">
+            <div class="calendar-warp">
+                <div class="calendar">
+                    <div class="calendar-container">
+                        <div class="calendar-header">
+                                <div class="view-year-month"></div>
+                            <div class="nav">
+                                <button class="nav-btn go-prev" onclick="prevMonth()">&lt;</button>
+                                <button class="nav-btn go-today" onclick="goMarriage()">Marriage</button>
+                                <button class="nav-btn go-next" onclick="nextMonth()">&gt;</button>
+                            
+                            </div>
+                        </div>
+                    </div>
+                    <div class="calendar-main">
+                        <div class="days">
+                            <div class="day">Mon</div>
+                            <div class="day">Tue</div>
+                            <div class="day">Wed</div>
+                            <div class="day">Thu</div>
+                            <div class="day">Fri</div>
+                            <div class="day">Sat</div>
+                            <div class="day">Sun</div>
+                        </div>
+                        <div class="dates"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+
+    <section id="Venue">
+        <div class="greetings-wrap">
+            <div class="intro_bg2"></div>
+            <div class="row_D">
+                <h2 class="greetings-title"> Gree<span class = "pink-text">tings</span> </h2>
+                <p class="story-content">
+                   <br>각자 서로 다른길을 걸어 온 저희가 이제 
+                   <br>부부의 연으로 한 길을 걸어가고자 합니다.
+                   <br>믿음과 사랑으로 하나되는 이 자리에 참석하여                    
+                   <br>축복해 주시면 더 없는 기쁨으로 간직하겠습니다.
+                </p>
+                <!--ifram 태그를 통해 google map을 띄어줌-->
+                <iframe id = "map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d100863.7231020476!2d128.8047616163185!3d37.81367166514923!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3561e5abaf1d9019%3A0x6c3119499bd88463!2z7Iqk7ZSE66eB7ZWE65Oc!5e0!3m2!1sko!2skr!4v1669775992686!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <p class="address">
+                    <br> 스프링필드
+                    <br> 강원도 강릉시 난곡동 동해대로3406번길 42
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id ="donation-call">
+        <div class="donation-wrap">
+            <div class="intro_bg3"></div>
+            <div class="row_E">
+                <h5 class="donation-title"> 신랑 신부에게&nbsp<span class="pink-text"><i class="fa-solid fa-heart"></i></span>&nbsp전하기</h5>
+                <div class="donation-content1" id="contact">
+                    <hr class="title-line">
+                    <h5 class="title2">혼 주 에 게 연 락 하 기</h5>
+                    <p class="subtitle1">따듯한 마음의 이야기를 전해주세요</p>
+                    <!-- a 태그를 통해 클릭하면 바로 전화 걸 수 있게 함-->
+                    <p class="call"> 신랑에게 연락하기 &nbsp 이제윤 &nbsp&nbsp <a href="tel:010-7237-4787"><i class="fa-solid fa-phone"></i></a> <p>
+                    <p class="call"> 신부에게 연락하기 &nbsp 김지은 &nbsp&nbsp <a href="tel:010-7237-4787"><i class="fa-solid fa-phone"></i></a> <p>
+                </div>
+                <div class="donation-content2" id="donation">
+                    <hr class="title-line">  
+                    <h5 class="title2">마음 전하기</h5>
+                    <p class="subtitle1">축하의 마음을 담아 축의금을 전달해보세요.</p>
+                    <div class="dsubtitle">신랑측 마음</div>
+                    <div class="box">
+                        <input  value="신한 111-22222-90" readonly id="account">
+                        <!-- JS 함수 적용-->
+                        <button class="account_box1" onclick="CopyFunction()"> 계좌번호 복사</button>
+                    </div>
+                    <div class="dsubtitle">신부측 마음</div>
+                    <div class="box">
+                        <input type="text" value="하나 111-22222-90" readonly id="account"> 
+                        <button class="account_box2" onclick="CopyFunction()"> 계좌번호 복사</button>
+                    </div>    
+                </div>
+               
+            </div>
+            <h2 class="photo-title">Our <span class = "pink-text">Photo</span> </h2>
+        </div> 
+   </section>
+   <section id="slideShow">
+    
+        <div class="slideShow-wrap">
+           
+            <ul class="slides">
+                <li><img src="imgs/1.jpg" alt=""></li>
+                <li><img src="imgs/2.jpg" alt=""></li>
+                <li><img src="imgs/3.jpg" alt=""></li>
+                <li><img src="imgs/4.jpg" alt=""></li>
+            </ul>  
+            <p class="controller">
+            
+            <!-- &lang: 왼쪽 방향 화살표
+            &rang: 오른쪽 방향 화살표 -->
+            <span class="prev">&lang;</span>  
+            <span class="next">&rang;</span>
+            </p>
+        </div>
+        </section>
+
+
+    <audio id="mySong">
+        <source src="media/song.mp3" type="audio/mp3">
+    </audio>
+
+    <script src="Js/index.js"></script>
+    <script src="Js/calendar.js"></script>
+    <script src="Js/slideShow.js"></script>
+    
+    <script src="https://kit.fontawesome.com/83f12acf15.js" crossorigin="anonymous"></script>
+</body>
+</html>
+
