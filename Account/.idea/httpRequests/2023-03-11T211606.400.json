@@ -1,0 +1,6 @@
+{
+  "timestamp": "2023-03-11T12:16:06.939+00:00",
+  "status": 400,
+  "error": "Bad Request",
+  "path": "/transaction/use"
+}

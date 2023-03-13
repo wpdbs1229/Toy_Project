@@ -1,0 +1,8 @@
+{
+  "accountNumber": "1000000002",
+  "transactionType": "USE",
+  "transactionResultType": "S",
+  "transactionId": "0ba9eb468aba45f496eaee541b59bf87",
+  "amount": 12345,
+  "transactedAt": "2023-03-11T22:51:06.22204"
+}
