@@ -47,7 +47,7 @@ public class ReservationDto {
 
     @Getter
     public static class ApproveRequest{
-        private Long id;
+        private Long reservationId;
         private boolean confirm;
     }
 

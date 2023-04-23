@@ -57,7 +57,7 @@ public class ReservationController {
     }
 
     @PutMapping("/adjustment")
-    @PreAuthorize("hasRole('CUTOMER')")
+    @PreAuthorize("hasRole('CUSTOMER')")
     public ResponseEntity<?> updateReservation(
             @RequestParam @DateTimeFormat(iso = DateTimeFormat.ISO.DATE_TIME) LocalDateTime dateTime,
             @RequestParam Long reservationId
@@ -80,7 +80,7 @@ public class ReservationController {
         return ResponseEntity.ok(confirm);
     }
 
-    @PostMapping
+    @PostMapping("/check")
     @PreAuthorize("hasRole('CUSTOMER')")
     public ResponseEntity<?> checkReservation(@RequestBody ReservationDto.CheckReservation request){
         var reservation = reservationService.checkReservation(request);
