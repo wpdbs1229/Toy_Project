@@ -27,6 +27,7 @@ public class MemberEntity extends BaseEntity implements UserDetails {
     @Column(unique = true)
     private String name;
     private String password;
+    @Column(unique = true)
     private String phone;
 
     @ElementCollection(fetch = FetchType.EAGER)

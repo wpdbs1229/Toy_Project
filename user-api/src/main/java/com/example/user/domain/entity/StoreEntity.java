@@ -1,17 +1,19 @@
 package com.example.user.domain.entity;
 
 import com.example.user.domain.dto.StoreDto;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.NoArgsConstructor;
+import lombok.*;
+import org.hibernate.envers.AuditOverride;
 
 import javax.persistence.*;
 
 @Entity
+@Getter
+@Setter
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class StoreEntity {
+@AuditOverride(forClass = BaseEntity.class)
+public class StoreEntity extends BaseEntity{
 
     @Id
     @GeneratedValue

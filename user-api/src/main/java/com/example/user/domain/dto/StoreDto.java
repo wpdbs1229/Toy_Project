@@ -29,6 +29,14 @@ public class StoreDto {
         }
     }
 
+    @Getter
+    public static class UpdateStore{
+        private String storeName;
+        private String address;
+        private String description;
+        private String storeCode;
+    }
+
     @Builder
     @Getter
     @Setter
