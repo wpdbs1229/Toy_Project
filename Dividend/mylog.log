@@ -1,0 +1,49 @@
+10:38:03.591 [main] INFO  c.h.dividend.DividendApplication - Starting DividendApplication using Java 11.0.18 on persimmontree with PID 13228 (C:\Users\dlwpd\IdeaProjects\Dividend\out\production\classes started by dlwpd in C:\Users\dlwpd\IdeaProjects\Dividend)
+10:38:03.593 [main] INFO  c.h.dividend.DividendApplication - No active profile set, falling back to default profiles: default
+10:38:04.387 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+10:38:04.388 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+10:38:04.458 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 62 ms. Found 3 JPA repository interfaces.
+10:38:04.470 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+10:38:04.471 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+10:38:04.485 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.hidevelop.dividend.persist.CompanyRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+10:38:04.487 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.hidevelop.dividend.persist.DividendRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+10:38:04.487 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.hidevelop.dividend.persist.MemberRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+10:38:04.487 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+10:38:04.780 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@3468ee6e' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+10:38:04.782 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+10:38:05.174 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+10:38:05.181 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+10:38:05.182 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+10:38:05.182 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.54]
+10:38:05.183 [main] INFO  o.a.c.core.AprLifecycleListener - Loaded Apache Tomcat Native library [1.2.35] using APR version [1.7.0].
+10:38:05.184 [main] INFO  o.a.c.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+10:38:05.184 [main] INFO  o.a.c.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+10:38:05.196 [main] INFO  o.a.c.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1q  5 Jul 2022]
+10:38:05.268 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+10:38:05.268 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1638 ms
+10:38:05.295 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+10:38:05.398 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+10:38:05.403 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:test'
+10:38:05.549 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+10:38:05.618 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.32.Final
+10:38:05.725 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+10:38:05.809 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+10:38:06.284 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+10:38:06.290 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+10:38:06.685 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+10:38:06.989 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/h2-console/**'] with []
+10:38:07.015 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@11771fd6, org.springframework.security.web.context.SecurityContextPersistenceFilter@3dc14f80, org.springframework.security.web.header.HeaderWriterFilter@782ed745, org.springframework.security.web.authentication.logout.LogoutFilter@294a12b5, com.hidevelop.dividend.security.JwtAuthenticationFilter@1002d1c8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7ef7faa9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@50aa9a91, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1c512bb, org.springframework.security.web.session.SessionManagementFilter@1221d607, org.springframework.security.web.access.ExceptionTranslationFilter@56887c8f, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2b9bbaa8]
+10:38:07.447 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+10:38:07.466 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+10:38:07.481 [main] INFO  c.h.dividend.DividendApplication - Started DividendApplication in 4.3 seconds (JVM running for 4.989)
+10:39:27.192 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+10:39:27.195 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+10:39:27.198 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+10:40:18.904 [http-nio-8080-exec-4] INFO  c.h.dividend.web.AuthController - user login ->asdf
+10:40:54.000 [http-nio-8080-exec-7] INFO  c.h.d.s.JwtAuthenticationFilter - [asdf] -> /company
+10:40:54.011 [http-nio-8080-exec-7] INFO  o.apache.tomcat.util.http.Parameters - Character decoding failed. Parameter [%page] with value [1] has been ignored. Note that the name and value quoted here may be corrupted due to the failed decoding. Use debug level logging to see the original, non-corrupted values.
+ Note: further occurrences of Parameter errors will be logged at DEBUG level.
+10:41:19.919 [http-nio-8080-exec-8] INFO  c.h.d.s.JwtAuthenticationFilter - [asdf] -> /company
+10:49:04.076 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+10:49:04.080 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+10:49:04.085 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
