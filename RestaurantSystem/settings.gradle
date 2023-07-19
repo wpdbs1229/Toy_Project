@@ -1,0 +1,4 @@
+rootProject.name = 'RestaurantSystem'
+include 'user-api'
+include 'store-api'
+
