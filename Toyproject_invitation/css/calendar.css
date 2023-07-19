@@ -1,0 +1,136 @@
+
+
+.calendar-warp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 10vh;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    margin-top: -300px;
+}
+
+.calendar{
+    width: 600px;
+    margin: 50px;
+   
+}
+
+.calendar-container {
+	position: relative;
+	width: 600px;
+}
+
+.calendar-container .calendar-header {
+	
+    display: flex;
+    border-radius: 1em 1em 0 0;
+	background: #e66b6b;
+	color: #fff;
+	padding: 4em 2em;
+}
+
+
+
+/*year-month와 nav 양끝 정렬, 세로 가운데 정렬을 위한 flex*/
+
+.view-year-month {
+    font-weight: 800;
+    font-size: 2em;
+	line-height: 1em;
+}
+
+.view-day{
+  
+    padding-left: 100px;
+    font-size: 3em;
+	font-weight: 900;
+
+}
+.nav{
+    display: flex;
+    padding-left: 50%;
+    border-radius: 5px;
+}
+
+.nav-btn {
+   
+    font-weight: 900;
+    font-size: 24px;
+    border: 0;
+    outline: 0;
+    background-color: #e66b6b;
+    padding: 0px 3px;
+    color: #fff;
+    margin-left: 10px;
+}
+
+
+.days{
+    display: flex;
+    margin: 25px 0 10px;
+}
+
+/*
+1. 100%의 너비를 7개로 나누어줘서 요일이 들어갈 공간을 만듬
+2. 글씨 배치를 중앙
+3. display 속성을 flex로 해 옆으로 배열
+4. 테두리는 위, 아래만 생성 (나머지는 날짜와 다른부분에서 만들어주기 떄문)
+*/
+.day {
+    width: calc(100%/7);
+    text-align: center;
+}
+.dates{
+    display: flex;
+    flex-flow: row wrap;
+    height: 500px;
+    border-top: 1px solid #333;
+    border-left: 1px solid #333;
+}
+/*
+1. 100%의 너비를 7개로 나누어줘서 날짜가 들어갈 공간을 만듬
+2. 글씨 배치를 중앙
+3. display 속성을 flex로 해 옆으로 배열
+4. 테두리는 아래, 오른쪽만 생성 (나머지는 요일과 다른부분에서 만들어주기 떄문)
+*/
+.date {
+
+    width: calc(100%/7);
+    padding: 15px;
+    text-align: right;
+    border-bottom: 1px solid #333;
+    border-right: 1px solid #333;
+}
+
+/*이번 달을 제외한 날짜 회색*/
+.other {
+    color: gray;
+}
+
+
+/*결혼 날짜 표시 글자 흰색 바탕 빨강색*/
+.marriage{
+    position: relative;
+    color : #fff;
+}
+
+.marriage::before{
+    position :absolute;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+    display: block;
+    width: 30px; 
+    height: 30px;
+    background-color: #f46267;
+    border-radius: 50%;
+    transform: translate(-50%, -48%);
+    content:'';
+}
+
+/* 일요일과 토요일은 요일과 날짜를 각각 빨간색, 파란색으로 표시*/
+.day:nth-child(7n+1), .date:nth-child(7n+1){ color: red;}
+.day:nth-child(7n), .date:nth-child(7n) {color: blue;}

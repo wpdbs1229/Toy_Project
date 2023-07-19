@@ -1,0 +1,428 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+}
+
+input{
+    border: none;
+    border-right: 0px;
+    border-left: 0px;
+    border-top: 0px;
+    border-bottom: 0px;
+}
+button{
+    border: 0;
+    outline: 0;
+}
+a:link { color: #fff; text-decoration: none;}
+a:visited { color:#fff; text-decoration: none;}
+
+.call > a:link{
+
+    color: #f46267;
+}
+.call > a:hover{
+    color : #6fa466;
+}
+/*--intro_bg--*/
+
+.intro_bg_wrap{
+    width: 100%;
+    height: 1100px;
+    background-color : rgba(0, 0, 0, 0.4);
+}
+.intro_bg {
+    position: relative;
+    width: 100%;
+    height :1100px;
+    background-image:url("../imgs/intro_bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+}
+
+/*--title-wrap--*/
+ 
+.title_wrap {
+    position: relative;
+    margin: 0 auto;
+    height: 1080px;
+}
+
+
+/*--heart--*/
+
+.heart{
+    position: relative;
+    height: 30px;
+    width: 100px;
+    top :30%;
+    left: 50%;
+ 
+}
+
+.heart_a {
+    width: 30px;
+    height: 30px;
+    background: #f46267;
+    position: absolute;
+    transform: rotate(45deg);
+    z-index: 2;
+  }
+  .heart_a::before,
+  .heart_a::after {
+    content: "";
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    border-radius: 50%;
+    background: #f46267;
+
+  }
+  .heart_a::before {
+    left: -50%;
+  }
+  .heart_a::after {
+    top: -50%;
+}
+
+.heart_b {
+    width: 30px;
+    height: 30px;
+    background: #fde6e7;
+    position: absolute;
+    transform: rotate(45deg);
+    margin-left: 22px;
+    z-index: 1;
+  }
+
+  .heart_b::before,
+  .heart_b::after {
+    content: "";
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    border-radius: 50%;
+    background: #fde6e7;
+  }
+  .heart_b::before {
+    left: -50%;
+  }
+  .heart_b::after {
+    top:-50%;
+}
+
+/*--title & subtitle--*/
+
+.title{
+    position:absolute;
+    left: 50%;
+    top: 35%;
+    width: 700px;
+    height: 50px;
+    margin-left: -250px;
+    font-size: 70px;
+    color: #fde6e7;
+}
+
+.subtitle{
+    position: absolute;
+    left: 50%;
+    top : 45%;
+    width: 700px;
+    height: 40px;
+    margin-left: -230px;
+    font-size: 30px;
+    color: #fde6e7;
+}
+
+/*--music--*/
+.music{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left:88%;
+    top :95%;
+    margin-left: -25px;
+    margin-top: -25px;
+}
+
+.music p{
+    font-size : 12px;
+    color: #fde6e7;
+    font-weight: 800;
+    margin-right: 15px;
+}
+
+#icon{
+    width: 50px;
+    cursor: pointer;
+}
+
+/*--story--*/
+
+.story-container {
+    width: 100%;
+    height: 1650px;
+    position: relative;
+    margin: 0 auto;
+}
+
+/*--row_A--*/
+.row_A {
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    width: 1000px;
+    height: 1000px;
+    margin-left: -500px;
+    text-align: center;
+}
+
+.story-title{
+    font-size: 64px;
+}
+
+.story-content{
+    font-size: 24px;
+}
+
+/*--pink-text --*/
+.pink-text{
+    color: #f46267;
+}
+
+
+
+/*--row_B--*/
+
+.row_B{
+    position: absolute;
+    top: 600px;
+    left: 50%;
+    width: 500px;
+    height: 700px;
+    margin-left: -500px;
+    margin-top: 0px;
+    text-align: center;
+}
+
+/*--row_C--*/
+
+.row_C{
+    position: absolute;
+    margin-top: 230px;
+    top: 1100px;
+    left: 50%;
+    width: 1000px;
+    height: 400px;
+    margin-left: -500px;
+    text-align: center;
+}
+
+.story_End{
+    margin-top: 30px;
+    font-size: 36px;
+}
+
+/*--date--*/
+
+
+.date-wrap{
+    position: relative;
+    width: 100%;
+    height: 600px;
+    margin: 0 auto;
+}
+
+.intro_bg1{
+    position: relative;
+    width: 100%;
+    height :440px;
+    background-image:url("../imgs/marriage1.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+}
+.date-title{
+    position: absolute;
+    left: 50%;
+    margin-left: -215px;
+    margin-top: 100px;
+    font-size: 64px;
+}
+
+/* ---Greetings ---*/
+
+.greetings-wrap{
+    width: 100%;
+    height: 1500px;
+    position: relative;
+    margin: auto;
+}
+
+.intro_bg2{
+    position: relative;
+    width: 100%;
+    height :440px;
+    background-image:url("../imgs/marriage2.jpg");
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+}
+
+/*-- row_D--*/
+.row_D{
+
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    width: 1000px;
+    height: 1000px;
+    margin-left: -500px;
+    text-align: center;
+}
+
+.greetings-title{
+    font-size: 64px;
+}
+
+#map{
+    position: absolute;
+    top :30%;
+    left: 50%;
+    margin-left: -300px;
+}
+
+.address{
+    position: absolute;
+    top: 77%;
+    left: 50%;
+    margin-left: -180px;
+    font-size: 20px;
+    font-weight: 800;
+}
+/*---donation--*/
+
+.donation-wrap{
+    width: 100%;
+    height: 1600px;
+    position: relative;
+    margin: auto;
+}
+
+.intro_bg3{
+    position: relative;
+    width: 100%;
+    height :440px;
+    background-image:url("../imgs/marriage3.jpg");
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+}
+
+/*--row_E--*/
+
+.row_E{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    width: 1000px;
+    height: 1000px;
+    margin-left: -500px;
+    text-align: center;
+}
+.donation-title{
+    font-size: 40px;
+}
+
+.donation-content1{
+    width: 400px;
+    height: 150px;
+    border-radius: 10%;
+    position: absolute;
+    left :50%;
+    margin-left: -200px;
+    top: 10%;
+}
+.call {
+    margin: 10px 0;
+}
+.title2{
+    font-size : 20px;
+    margin-bottom: 20px;
+}
+.subtitle1{
+    margin: 30px 0;
+}
+.title-line{
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+.donation-content2{
+    width: 400px;
+    height: 150px;
+    border-radius: 10%;
+    position: absolute;
+    left :50%;
+    margin-left: -200px;
+    top:40%;
+}
+.box{
+    display: flex;
+    margin-left: 15%;
+}
+/*--account --*/
+
+.account{
+    width: 200px;
+    margin: 10px;
+}
+.account_box1{
+    width: 200px;
+    height: 35px;
+    line-height: 37px;
+    color: whitesmoke;
+    background: #6fa466;
+    border-radius: 40px;
+    margin-left: 40px;
+}
+
+.account_box2{
+    width: 200px;
+    height: 35px;
+    line-height: 37px;
+    color: whitesmoke;
+    background: #f79397;
+    border-radius: 40px;
+    margin-left: 40px;
+}
+.copy{
+    width: 70px;
+    height: 35px;
+    line-height: 37px;
+    color: whitesmoke;
+    background: #6fa466;
+    border-radius: 40px;
+    margin-left: 40px;
+}
+.dsubtitle{
+    margin: 20px;
+    font-weight: 800;
+}
+
+.photo-title{
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    margin-left: -110px;
+    font-size: 64px;
+   
+}
